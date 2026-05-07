@@ -10,3 +10,4 @@ Clone the repository, and run `main.py` in any current version of [Python](https
 - MAME/Real Box Support.
 - HTTP/HTTPS Proxy, needed for real units to brows the internet and for any HTTPS websites to work.
 - Unlocking the OPTIONS panel on login. (wtv-framework doesn't but it's newer cousin [pysrv](https://github.com/SachaTending/webtv_pysrv/tree/main) does, need to look into.)
+- General improvements to the base WTV-FRAMEWORK engine.
