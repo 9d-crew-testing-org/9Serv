@@ -1,6 +1,6 @@
-home = Service("wtv-home")
+wtvhome = Service("wtv-home")
 
-@home.addhandl("playlist-load")
+@wtvhome.addhandl("playlist-load")
 def playlist_load(data):
     out = f"""200 OK\n
     Content-Type: text/html\n
@@ -9,12 +9,12 @@ def playlist_load(data):
     """
     return out
 
-@home.addhandl("splash")
+@wtvhome.addhandl("splash")
 def splash_handl(data):
     return Responce(200, data=open("./ServiceVault/wtvhome/splash.html").read())
 
-@home.addhandl("home")
+@wtvhome.addhandl("home")
 def splash_handl(data):
     return Responce(200, data=open("./ServiceVault/wtvhome/home.html").read())
 
-m.addservice(home)
+m.addservice(wtvhome)
